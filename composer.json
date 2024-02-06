@@ -2,5 +2,11 @@
     "name": "arcel/framework",
     "description": "A php application for tracking expense made by a framework created from scracth by me",
     "type": "project",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Framework\\" : "src/Framework",
+            "App\\": "src/App"
+        }
+    }
 }
