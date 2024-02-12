@@ -6,4 +6,3 @@ include __DIR__ . '/../src/App/function.php';
 
  $app->run();
 
- dd($app);

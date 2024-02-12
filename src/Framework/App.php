@@ -5,11 +5,17 @@ namespace Framework;
 
 class App {
     private Router $router;
-    function __construct(){
+    public function __construct(){
 
         $this->router = new Router();
     }
-    public function run(){
-        echo" Application is Running";
+    public function run()
+    {
+        echo"Application is Running";
+    }
+
+    public function add(string $path)
+    {
+        $this->router->add($path);
     }
 }
