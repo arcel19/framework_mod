@@ -12,8 +12,9 @@ class TemplateEngine
         $this->basePath = $basePath;
     }
 
-    public function render(string $template)
+    public function render(string $template , array $data = [])
     {
+        extract($data, EXTR_SKIP);
         $this->template = $template;
         include "{$this->basePath}/{$template}";
     }

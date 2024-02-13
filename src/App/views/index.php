@@ -1,1 +1,1 @@
-<h1>home page index</h1>
+<h1> <?php echo $title; ?> </h1>
