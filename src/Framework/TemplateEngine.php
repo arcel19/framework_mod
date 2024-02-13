@@ -7,7 +7,7 @@ namespace Framework;
 class TemplateEngine
 {
     private string $template;
-    public function __construct(string $basePath)
+    public function __construct(  string $basePath)
     {
         $this->basePath = $basePath;
     }
