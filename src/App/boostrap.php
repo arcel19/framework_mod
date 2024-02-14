@@ -12,7 +12,7 @@ $app = new App();
 
 $app->get('/',[HomeController::class,'home']);
 
-$app->get('/about', [AboutController::class,'about']);
+$app->get('about', [AboutController::class,'about']);
 
 
 
